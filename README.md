@@ -12,3 +12,14 @@ Personal note for my Linux setup
 2. Copy `/usr/share/doc/nvidia-kernel-common-550/nvidia-powerd.service` to `/etc/systemd/system/`
 3. Run `sudo systemctl enable nvidia-powerd.service`
 4. Run `sudo systemctl start nvidia-powerd.service`
+
+## Small cursor on flatpak apps
+1. Install flatseal (`flatpak install flatseal`)
+2. Inside flatseal head to `All Applications` > `File System` > `Other Files` then add the following directories:
+    - `/usr/share/icons`
+    - `/usr/share/fonts`
+    - `/usr/share/themes`
+    - `~/.icons`
+    - `~/.fonts`
+    - `~/.themes`
+3. Restart the flatpak app
