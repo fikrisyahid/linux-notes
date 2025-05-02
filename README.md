@@ -23,3 +23,12 @@ Personal note for my Linux setup
     - `~/.fonts`
     - `~/.themes`
 3. Restart the flatpak app
+
+## Fix WPS crash
+1. Run `sudo mv /opt/kingsoft/wps-office/office6/wpscloudsvr /opt/kingsoft/wps-office/office6/backup_wpscloudsvr`
+
+## Fix WPS PDF
+1. Open `https://archive.ubuntu.com/ubuntu/pool/main/t/tiff/`
+2. Download and install `libtiff5_4.3.0-6_amd64.deb`
+
+> Additionally you can directly download the file [here](https://archive.ubuntu.com/ubuntu/pool/main/t/tiff/libtiff5_4.3.0-6_amd64.deb)
