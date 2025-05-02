@@ -44,7 +44,7 @@ Personal note for my Linux setup
 > Additionally you can directly download the file [here](https://archive.ubuntu.com/ubuntu/pool/main/t/tiff/libtiff5_4.3.0-6_amd64.deb)
 
 ## Get battery discharge rate
-1. Find out whether you have BAT0 or BAT1 by running `ls /sys/class/power_supply/`
+1. Find out whether you have `BAT0` or `BAT1` by running `ls /sys/class/power_supply/`
 2. Run `upower -i /org/freedesktop/UPower/devices/battery_BAT1`. Pay attention to `BAT0` or `BAT1` at the end.
 3. Look for `energy-rate` in the output. This is the discharge rate of your battery in W.
 4. If you want to get the discharge rate in mW, run `upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep energy-rate | awk '{print $2*1000}'`
