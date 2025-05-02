@@ -23,7 +23,7 @@ Personal note for my Linux setup
 > Note: Your version of the driver may be different, so make sure to check the path of the files in `/usr/share/doc/` and adjust accordingly.
 
 ## Small cursor on flatpak apps
-1. Install flatseal (`flatpak install flatseal`)
+1. Install flatseal: `flatpak install flatseal`
 2. Inside flatseal head to `All Applications` > `File System` > `Other Files` then add the following directories:
     - `/usr/share/icons`
     - `/usr/share/fonts`
