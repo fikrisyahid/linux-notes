@@ -1,6 +1,13 @@
 # linux-notes
 Personal note for my Linux setup
 
+## Table of contents
+- [Auto mount Windows drive on Linux](#auto-mount-windows-drive-on-linux)
+- [Enable NVIDIA dynamic boost](#enable-nvidia-dynamic-boost)
+- [Small cursor on flatpak apps](#small-cursor-on-flatpak-apps)
+- [Fix WPS crash](#fix-wps-crash)
+- [Fix WPS PDF](#fix-wps-pdf)
+
 ## Auto mount Windows drive on Linux
 1. Open `/etc/fstab`
 2. Add the following line `UUID=<uuid-of-ntfs-file-system>   /mnt/ntfs    ntfs    defaults   0   2`
