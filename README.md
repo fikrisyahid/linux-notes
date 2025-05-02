@@ -7,6 +7,7 @@ Personal note for my Linux setup
 - [Small cursor on flatpak apps](#small-cursor-on-flatpak-apps)
 - [Fix WPS crash](#fix-wps-crash)
 - [Fix WPS PDF](#fix-wps-pdf)
+- [Get battery discharge rate](#get-battery-discharge-rate)
 
 ## Auto mount Windows drive on Linux
 1. Open `/etc/fstab`
