@@ -13,6 +13,7 @@ Personal note for my Linux setup
 1. Open `/etc/fstab`
 2. Add the following line `UUID=<uuid-of-ntfs-file-system>   /mnt/ntfs    ntfs    defaults   0   2`
 
+> [!Tip]
 > use `blkid` to get the UUID of the NTFS file system
 
 ## Enable NVIDIA dynamic boost
@@ -21,6 +22,7 @@ Personal note for my Linux setup
 3. Run `sudo systemctl enable nvidia-powerd.service`
 4. Run `sudo systemctl start nvidia-powerd.service`
 
+> [!Note]
 > Note: Your version of the driver may be different, so make sure to check the path of the files in `/usr/share/doc/` and adjust accordingly.
 
 ## Small cursor on flatpak apps
@@ -41,6 +43,7 @@ Personal note for my Linux setup
 1. Open `https://archive.ubuntu.com/ubuntu/pool/main/t/tiff/`
 2. Download and install `libtiff5_4.3.0-6_amd64.deb`
 
+> [!Tip]
 > Additionally you can directly download the file [here](https://archive.ubuntu.com/ubuntu/pool/main/t/tiff/libtiff5_4.3.0-6_amd64.deb)
 
 ## Get battery discharge rate
@@ -52,4 +55,5 @@ Personal note for my Linux setup
 6. If you want to get the discharge rate in Wh, run `upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep energy-rate | awk '{print $2*3600/1000}'`
 7. If you want to get the discharge rate in kWh, run `upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep energy-rate | awk '{print $2*3600/1000000}'`
 
+> [!Tip]
 > The information is refreshed every 30 seconds. You can watch the change by running `watch -n 1 upower -i /org/freedesktop/UPower/devices/battery_BAT1`
