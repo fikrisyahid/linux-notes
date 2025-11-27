@@ -8,6 +8,7 @@ Personal note for my Linux setup
 - [Fix WPS crash](#fix-wps-crash)
 - [Fix WPS PDF](#fix-wps-pdf)
 - [Get battery discharge rate](#get-battery-discharge-rate)
+- [Disable Lenovo WMI Drivers on Kernel 6.17+](#)
 
 ## Auto mount Windows drive on Linux
 1. Open `/etc/fstab`
@@ -57,3 +58,16 @@ Personal note for my Linux setup
 
 > [!Tip]
 > The information is refreshed every 30 seconds. You can watch the change by running `watch -n 1 upower -i /org/freedesktop/UPower/devices/battery_BAT1`
+
+## Disable Lenovo WMI Drivers on Kernel 6.17+
+Run this command
+```
+sudo bash -c 'cat > /etc/modprobe.d/blacklist-lenovo-gamezone.conf <<EOF
+blacklist lenovo_wmi_gamezone
+blacklist lenovo_wmi_other
+blacklist lenovo_wmi_capdata01
+blacklist lenovo_wmi_helpers
+blacklist lenovo_wmi_hotkey_utilities
+blacklist lenovo_wmi_events
+EOF'
+```
