@@ -60,7 +60,7 @@ Personal note for my Linux setup
 > The information is refreshed every 30 seconds. You can watch the change by running `watch -n 1 upower -i /org/freedesktop/UPower/devices/battery_BAT1`
 
 ## Disable Lenovo WMI Drivers on Kernel 6.17+
-Run this command
+1. Disable the Lenovo WMI this command:
 ```bash
 sudo bash -c 'cat > /etc/modprobe.d/blacklist-lenovo-gamezone.conf <<EOF
 blacklist lenovo_wmi_gamezone
@@ -70,4 +70,12 @@ blacklist lenovo_wmi_helpers
 blacklist lenovo_wmi_hotkey_utilities
 blacklist lenovo_wmi_events
 EOF'
+```
+2. Update initramfs:
+```bash
+sudo mkinitcpio -P
+```
+3. Reboot your system:
+```bash
+sudo reboot
 ```
