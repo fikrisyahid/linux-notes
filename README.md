@@ -61,7 +61,7 @@ Personal note for my Linux setup
 
 ## Disable Lenovo WMI Drivers on Kernel 6.17+
 Run this command
-```
+```bash
 sudo bash -c 'cat > /etc/modprobe.d/blacklist-lenovo-gamezone.conf <<EOF
 blacklist lenovo_wmi_gamezone
 blacklist lenovo_wmi_other
