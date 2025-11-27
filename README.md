@@ -8,7 +8,7 @@ Personal note for my Linux setup
 - [Fix WPS crash](#fix-wps-crash)
 - [Fix WPS PDF](#fix-wps-pdf)
 - [Get battery discharge rate](#get-battery-discharge-rate)
-- [Disable Lenovo WMI Drivers on Kernel 6.17+](#)
+- [Disable Lenovo WMI Drivers on Kernel 6.17+](#disable-lenovo-wmi-drivers-on-kernel-617)
 
 ## Auto mount Windows drive on Linux
 1. Open `/etc/fstab`
